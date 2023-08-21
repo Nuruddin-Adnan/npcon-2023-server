@@ -19,7 +19,6 @@ const createUser = async (payload: IUser): Promise<IUser> => {
 const loginUser = async (payload: ILoginUser): Promise<ILoginUserResponse> => {
   const { email, password } = payload;
 
-  // const isUserExist = await User.isUserExist(email);
   const isUserExist = await User.isUserExist(email);
 
   if (!isUserExist) {

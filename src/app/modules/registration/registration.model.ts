@@ -1,8 +1,8 @@
 import { Schema, model } from 'mongoose';
 import { paymentMethod, purpose } from './registration.constant';
-import { IRegistration } from './registration.interface';
+import { IRegistration, IRegistrationModel } from './registration.interface';
 
-const registrationSchema = new Schema<IRegistration>(
+const registrationSchema = new Schema<IRegistration, IRegistrationModel>(
   {
     name: {
       type: String,
@@ -10,19 +10,21 @@ const registrationSchema = new Schema<IRegistration>(
     },
     designation: { type: String },
     hospital: { type: String },
-    emailAddress: { type: String },
-    phoneNumber: { type: String },
-    amount: { type: Number },
-    purpose: [
-      {
-        type: String,
-        enum: {
-          values: purpose,
-          message: 'Purpose can be `{VALUE}`',
-          default: 'conference',
+    emailAddress: { type: String, unique: true },
+    phoneNumber: { type: String, unique: true },
+    amount: { type: Number, required: true },
+    purpose: {
+      type: [
+        {
+          type: String,
+          required: true,
+          enum: {
+            values: purpose,
+            message: 'Purpose can not be `{VALUE}`',
+          },
         },
-      },
-    ],
+      ],
+    },
     paymentMethod: {
       type: String,
       enum: {
@@ -48,7 +50,7 @@ const registrationSchema = new Schema<IRegistration>(
   },
 );
 
-export const Registration = model<IRegistration>(
+export const Registration = model<IRegistration, IRegistrationModel>(
   'Registration',
   registrationSchema,
 );

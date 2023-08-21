@@ -1,8 +1,9 @@
 /* eslint-disable no-unused-vars */
+import { Model } from 'mongoose';
 import { Types } from 'mongoose';
+import { IUser } from '../user/user.interface';
 
 export type IRegistration = {
-  _id: Types.ObjectId;
   name: string;
   designation: string;
   hospital: string;
@@ -11,6 +12,8 @@ export type IRegistration = {
   amount: number;
   purpose: string[];
   paymentMethod: string;
-  receivedBy: Types.ObjectId;
-  updatedBy: Types.ObjectId;
+  receivedBy: Types.ObjectId | IUser;
+  updatedBy: Types.ObjectId | IUser;
 };
+
+export type IRegistrationModel = Model<IRegistration, Record<string, unknown>>;
