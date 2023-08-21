@@ -1,0 +1,15 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "F:\\Next Level Web development\\projects\\NPCON-2023\\NPCON-2023-server\\logs\\winston\\errors\\.ab2877bf05a8567c3e3eafd2590574bc8396ac3d-audit.json",
+    "files": [
+        {
+            "date": 1692634490582,
+            "name": "F:\\Next Level Web development\\projects\\NPCON-2023\\NPCON-2023-server\\logs\\winston\\errors\\NPCON-2023-2023-21-08-22-error.log",
+            "hash": "e0a58f34309d10382e335e7493b8eedb7c1ce3b6658f3f604cf6cb02eb0f2ee0"
+        }
+    ],
+    "hashType": "sha256"
+}

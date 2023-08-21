@@ -3,11 +3,14 @@ import validateRequest from '../../middlewares/validateRequest';
 import { UserValidation } from '../user/user.validation';
 import { AuthController } from './auth.controller';
 import { AuthValidation } from './auth.validation';
+import auth from '../../middlewares/auth';
+import { ENUM_USER_ROLE } from '../../../enums/user';
 
 const router = express.Router();
 
 router.post(
   '/signup',
+  auth(ENUM_USER_ROLE.ADMIN),
   validateRequest(UserValidation.createUserZodSchema),
   AuthController.createUser,
 );

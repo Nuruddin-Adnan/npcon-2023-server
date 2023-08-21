@@ -16,7 +16,7 @@ const myFormat = printf(({ level, message, label, timestamp }) => {
 
 const logger = createLogger({
   level: 'info',
-  format: combine(label({ label: 'YOURAPP_NAME' }), timestamp(), myFormat),
+  format: combine(label({ label: 'NPCON-2023' }), timestamp(), myFormat),
   transports: [
     new transports.Console(),
     new DailyRotateFile({
@@ -25,7 +25,7 @@ const logger = createLogger({
         'logs',
         'winston',
         'successes',
-        'YOURAPP_NAME-%DATE%-success.log',
+        'NPCON-2023-%DATE%-success.log',
       ),
       datePattern: 'YYYY-DD-MM-HH',
       zippedArchive: true,
@@ -37,7 +37,7 @@ const logger = createLogger({
 
 const errorlogger = createLogger({
   level: 'error',
-  format: combine(label({ label: 'YOURAPP_NAME' }), timestamp(), myFormat),
+  format: combine(label({ label: 'NPCON-2023' }), timestamp(), myFormat),
   transports: [
     new transports.Console(),
     new DailyRotateFile({
@@ -46,7 +46,7 @@ const errorlogger = createLogger({
         'logs',
         'winston',
         'errors',
-        'YOURAPP_NAME-%DATE%-error.log',
+        'NPCON-2023-%DATE%-error.log',
       ),
       datePattern: 'YYYY-DD-MM-HH',
       zippedArchive: true,

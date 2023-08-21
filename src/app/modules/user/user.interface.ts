@@ -4,7 +4,7 @@ import { Model, Types } from 'mongoose';
 export type IUser = {
   _id: Types.ObjectId;
   password: string;
-  role: 'buyer' | 'seller' | 'general_user';
+  role: 'rent_collector';
   name: {
     firstName: string;
     lastName: string;

@@ -9,21 +9,13 @@ const router = express.Router();
 
 router.get(
   '/my-profile',
-  auth(
-    ENUM_USER_ROLE.BUYER,
-    ENUM_USER_ROLE.SELLER,
-    ENUM_USER_ROLE.GENERAL_USER,
-  ),
+  auth(ENUM_USER_ROLE.RENT_COLLECTOR),
   UserController.getMyProfile,
 );
 
 router.patch(
   '/my-profile',
-  auth(
-    ENUM_USER_ROLE.BUYER,
-    ENUM_USER_ROLE.SELLER,
-    ENUM_USER_ROLE.GENERAL_USER,
-  ),
+  auth(ENUM_USER_ROLE.RENT_COLLECTOR),
   validateRequest(UserValidation.updateUserZodSchema),
   UserController.updateMyProfile,
 );
