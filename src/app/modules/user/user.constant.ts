@@ -1,4 +1,4 @@
-export const role = ['rent_collector'];
+export const role = ['rent_collector', 'general_user'];
 
 export const userSearchableFields = [
   'role',

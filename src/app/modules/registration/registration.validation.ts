@@ -1,5 +1,5 @@
 import { z } from 'zod';
-import { paymentMethod } from './registration.constant';
+import { paymentMethod, status } from './registration.constant';
 
 const createRegistrationZodSchema = z.object({
   body: z.object({
@@ -15,6 +15,7 @@ const createRegistrationZodSchema = z.object({
     }),
     purpose: z.array(z.string()).min(1), // Array of non-empty strings
     paymentMethod: z.enum([...paymentMethod] as [string, ...string[]]),
+    status: z.enum([...status] as [string, ...string[]]).optional(),
   }),
 });
 
@@ -30,6 +31,7 @@ const updateRegistrationZodSchema = z.object({
     paymentMethod: z
       .enum([...paymentMethod] as [string, ...string[]])
       .optional(),
+    status: z.enum([...status] as [string, ...string[]]).optional(),
   }),
 });
 

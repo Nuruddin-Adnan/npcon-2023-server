@@ -14,6 +14,24 @@ router.post(
   RegistrationController.createRegistration,
 );
 
+router.get(
+  '/my-registrations',
+  auth(ENUM_USER_ROLE.ADMIN, ENUM_USER_ROLE.RENT_COLLECTOR),
+  RegistrationController.myRegistrations,
+);
+
+// show the registrations to all
+// This is only important field with approved item
+router.get(
+  '/show-to-all',
+  auth(
+    ENUM_USER_ROLE.ADMIN,
+    ENUM_USER_ROLE.RENT_COLLECTOR,
+    ENUM_USER_ROLE.GENERAL_USER,
+  ),
+  RegistrationController.showToAllRegistrations,
+);
+
 router.patch(
   '/:id',
   auth(ENUM_USER_ROLE.ADMIN, ENUM_USER_ROLE.RENT_COLLECTOR),
@@ -35,7 +53,7 @@ router.get(
 
 router.get(
   '/',
-  auth(ENUM_USER_ROLE.ADMIN, ENUM_USER_ROLE.RENT_COLLECTOR),
+  auth(ENUM_USER_ROLE.ADMIN),
   RegistrationController.getAllRegistrations,
 );
 

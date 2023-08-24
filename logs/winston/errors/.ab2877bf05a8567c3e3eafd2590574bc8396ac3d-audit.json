@@ -29,6 +29,51 @@
             "date": 1692651993531,
             "name": "F:\\Next Level Web development\\projects\\NPCON-2023\\NPCON-2023-server\\logs\\winston\\errors\\NPCON-2023-2023-22-08-03-error.log",
             "hash": "c2e382385c382cc5a2d5973adf9d02a377e3895e137e7cb538ffdd50b9bfd66c"
+        },
+        {
+            "date": 1692733828842,
+            "name": "F:\\Next Level Web development\\projects\\NPCON-2023\\NPCON-2023-server\\logs\\winston\\errors\\NPCON-2023-2023-23-08-01-error.log",
+            "hash": "925738fa4167ac2f3cbb1d3ddd0bad57af72fb4bdea00326569e7508791bf694"
+        },
+        {
+            "date": 1692734609508,
+            "name": "F:\\Next Level Web development\\projects\\NPCON-2023\\NPCON-2023-server\\logs\\winston\\errors\\NPCON-2023-2023-23-08-02-error.log",
+            "hash": "2aafa3ce3f0147841e1a95a912ca4047ccfba20cffa9395a957555c8596d9b30"
+        },
+        {
+            "date": 1692738513513,
+            "name": "F:\\Next Level Web development\\projects\\NPCON-2023\\NPCON-2023-server\\logs\\winston\\errors\\NPCON-2023-2023-23-08-03-error.log",
+            "hash": "d1dae5cedf62a36d0899e0d64ac7d5d3b0760825a2543c1516b4c49e1f6e2e58"
+        },
+        {
+            "date": 1692741667062,
+            "name": "F:\\Next Level Web development\\projects\\NPCON-2023\\NPCON-2023-server\\logs\\winston\\errors\\NPCON-2023-2023-23-08-04-error.log",
+            "hash": "7f41a15454e1052c25a1300463fd28f815cf934ac65bb713f4376e68fa7296a9"
+        },
+        {
+            "date": 1692791219568,
+            "name": "F:\\Next Level Web development\\projects\\NPCON-2023\\NPCON-2023-server\\logs\\winston\\errors\\NPCON-2023-2023-23-08-17-error.log",
+            "hash": "83838d5073e657f5eea7659343a82a092d0ebf452c31fb45c95a02d9e668f5aa"
+        },
+        {
+            "date": 1692809858542,
+            "name": "F:\\Next Level Web development\\projects\\NPCON-2023\\NPCON-2023-server\\logs\\winston\\errors\\NPCON-2023-2023-23-08-22-error.log",
+            "hash": "eed449b450e9f2d94d99632f7ee9115d929abd8be057520314adb571d1970126"
+        },
+        {
+            "date": 1692816417973,
+            "name": "F:\\Next Level Web development\\projects\\NPCON-2023\\NPCON-2023-server\\logs\\winston\\errors\\NPCON-2023-2023-24-08-00-error.log",
+            "hash": "7464dd17a9eae55fc2da9357cb98b53bce551cf1b7a9df4cf43d2dd380231b8f"
+        },
+        {
+            "date": 1692820742329,
+            "name": "F:\\Next Level Web development\\projects\\NPCON-2023\\NPCON-2023-server\\logs\\winston\\errors\\NPCON-2023-2023-24-08-01-error.log",
+            "hash": "aa96f9076b35b148a9cfdae390945d7716b6d2b08ccfc9e756ff7d3ffd4a4ae1"
+        },
+        {
+            "date": 1692834086059,
+            "name": "F:\\Next Level Web development\\projects\\NPCON-2023\\NPCON-2023-server\\logs\\winston\\errors\\NPCON-2023-2023-24-08-05-error.log",
+            "hash": "207a24056e982e3446dc4ecef8638d498caf8e1494c358e72f5528d210374c83"
         }
     ],
     "hashType": "sha256"

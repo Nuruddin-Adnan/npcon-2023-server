@@ -12,6 +12,9 @@ export type IRegistration = {
   amount: number;
   purpose: string[];
   paymentMethod: string;
+  bkashNumber: string;
+  note: string;
+  status: string;
   receivedBy: Types.ObjectId | IUser;
   updatedBy: Types.ObjectId | IUser;
 };

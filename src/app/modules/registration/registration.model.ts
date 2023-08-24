@@ -1,5 +1,5 @@
 import { Schema, model } from 'mongoose';
-import { paymentMethod, purpose } from './registration.constant';
+import { paymentMethod, purpose, status } from './registration.constant';
 import { IRegistration, IRegistrationModel } from './registration.interface';
 
 const registrationSchema = new Schema<IRegistration, IRegistrationModel>(
@@ -31,6 +31,16 @@ const registrationSchema = new Schema<IRegistration, IRegistrationModel>(
         values: paymentMethod,
         message: 'Payment method can be `{VALUE}`',
       },
+    },
+    bkashNumber: { type: String },
+    note: { type: String },
+    status: {
+      type: String,
+      enum: {
+        values: status,
+        message: 'Status  can be `{VALUE}`',
+      },
+      default: 'notApproved',
     },
     receivedBy: {
       type: Schema.Types.ObjectId,
